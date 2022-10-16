@@ -4,8 +4,9 @@
 }
 
 /* #FF46D4 */
-body{
-    height:200vh;   
+
+body {
+    min-height: 100vh;
 }
 
 header {
@@ -43,7 +44,6 @@ header {
 
 .lista-item__link {
     position: relative;
-
     color: white;
     text-decoration: none;
     padding-left: 2rem;
@@ -67,51 +67,74 @@ header {
     text-decoration: underline 5px;
 }
 
+/* -------------------- background  -----------------------   */
+
+.planofundo {
+    background: linear-gradient(#fff, #ccc ) fixed;
+    background-color:#ffc599;
+    background-image:
+    radial-gradient(at 22% 14%, hsla(191,99%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 22% 76%, hsla(238,79%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 69% 40%, hsla(5,84%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 33% 57%, hsla(276,79%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 22% 30%, hsla(66,92%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 34% 4%, hsla(137,84%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 7% 70%, hsla(347,74%,78%,1) 0px, transparent 50%);
+}
 
 /* -------------------- Chamada  -----------------------   */
 
 .chamada {
-    width: 100%;
-
-    margin: 0 auto;
-    background: url(./imgs/img.jpg);
-    background-position: center;
+    padding: 6rem 2rem;
+    width: calc(100% -4px);
+    background: linear-gradient(#fff, #ccc ) fixed;
+    overflow: hidden;
     background-size: cover;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: space-around;
+    background-color:#ffc599;
+    background-image:
+    radial-gradient(at 22% 14%, hsla(191,99%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 22% 76%, hsla(238,79%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 69% 40%, hsla(5,84%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 33% 57%, hsla(276,79%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 22% 30%, hsla(66,92%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 34% 4%, hsla(137,84%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 7% 70%, hsla(347,74%,78%,1) 0px, transparent 50%);
 }
 
-.chamada__container {
-    margin: auto auto;
-    width: 55%;
-    background: rgb(255, 255, 255, .8);
-    padding: 5rem 3rem;
 
-    border-radius: 5px;
-    border: 4px solid #4ABD3A;
-}
 
 .chamada__titulo {
+    font-family:Candara;
     font-size: 2.5rem;
     padding-bottom: 1rem;
 }
 
 
 .chamada__conteudo {
+    font-family: Candara;
     font-size: 1.4rem;
     font-weight: 548;
+    text-align:justify;
 }
 
 
 /* ------------------- Sobre -------------- */
 .sobre {
-    padding: 3rem 0;
+    padding: 2rem 2rem;
     width: calc(100% -4px);
-    height: 800px;
     background: linear-gradient(#fff, #ccc ) fixed;
     overflow: hidden;
+    background-size: cover;
+    background-color:#ffc599;
+    background-image:
+    radial-gradient(at 22% 14%, hsla(191,99%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 22% 76%, hsla(238,79%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 69% 40%, hsla(5,84%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 33% 57%, hsla(276,79%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 22% 30%, hsla(66,92%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 34% 4%, hsla(137,84%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 7% 70%, hsla(347,74%,78%,1) 0px, transparent 50%);
+   
 }
 
 
@@ -127,7 +150,9 @@ header {
 }
 
 .sobre__titulo{
-    font-size: 2.3rem;
+    padding-top: 3rem;
+    font-family: Candara;
+    font-size: 4rem;
     text-align: center
 }
 
@@ -139,26 +164,176 @@ header {
     height: 260px;
     border-radius: 5px;
     border: 2px solid #4ABD3A;
-    filter: drop-shadow(10px 10px 2px  gray);
 
 }
 
 .sobre__items-titulos{
-    font-size: 1.7rem;
+    font-family: Candara;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
 }
 
 .sobre__items-texto{
-    font-size: 1.3rem;
-    font-weight: 550;
+    font-family: Candara;
+    font-size: 1rem;
     margin: 2rem;
+    text-align:justify
 }
 
 
 .sobre__imagem-ilustrativa{
     width: 40%;
     border-radius: 5px;
-    filter: drop-shadow(10px 10px 2px  gray);
+
 }
 
+/* ------------------- Container -------------- */
+.chamada__container{
+    border-radius: 20px;
+    background: linear-gradient(145deg, #d7d6d6, #ffffff);
+    margin: auto auto;
+    width: 55%;
+    padding: 5rem 4rem;
+    margin-top: 3rem;
+    background: whitesmoke;
+    color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+}
+
+.chamada__container2{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius:32px;
+    width: 55%;
+    margin:auto;
+    padding: 10px;
+
+}
+
+/* ------------------- Espaço -------------- */
+.espacocima{
+    margin-top: 5rem;
+}
+.espacolado{
+    margin-left:2rem;
+}
+/* ------------------- Neon -------------- */
+.letraneon{
+    position: static;
+    display: inline-block;
+    padding:20px;
+    margin: 20px;
+    margin-left: 60px;
+    color:#1eff00;
+    font-family:'Candana';
+    text-decoration: none;
+    transition: 0.4s;
+    overflow: hidden;
+    margin-right: 0px;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;  
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  .letraneon:hover{
+    background: #1eff00;
+    color: #000;
+    box-shadow: 0 0 10px #1eff00, 0 0 40px #1eff00, 0 0 70px #1eff00;
+  }
+  .letraneon-blue:active{
+     color:#1eff00; 
+     background: #000000;
+  }
+
+/* ------------------- Barra Separação -------------- */
+  
+  .hr2 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+  }
+/* ------------------- Carrossel -------------- */
+.visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+  }
+  
+  .containercarousel {
+    overflow: hidden;
+    padding: 60px;
+    padding-top: 10px;
+    background: rgba(0,0,0,.1)
+  }
+  
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+
+b{
+  color:#4ABD3A;
+}
