@@ -28,12 +28,7 @@ header {
     height: 93px;
 }
 
-.navegacao__pagina {
-    display: flex;
-    padding: 1rem 2rem 1rem 0;
-    background: rgb(24, 24, 24, .4);
-    border-radius: 5px;
-}
+
 
 .lista__items {
     list-style: none;
@@ -49,19 +44,7 @@ header {
     padding-left: 2rem;
 }
 
-.lista-item__link:not(:first-child):after {
-    content: "|";
 
-    position: absolute;
-    top: -3px;
-    left: 1rem;
-
-    font-size: 1.5rem;
-    height: 7px;
-    width: 2px;
-    color: white;
-
-}
 
 .lista-item__link:hover {
     text-decoration: underline 5px;
@@ -196,7 +179,7 @@ header {
     width: 55%;
     padding: 5rem 4rem;
     margin-top: 3rem;
-    background: whitesmoke;
+    background: rgb(255, 255, 255);
     color: rgba(0,0,0,.5);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
@@ -336,4 +319,11 @@ header {
 
 b{
   color:#4ABD3A;
+}
+
+/* ------------------- HOVER -------------- */
+
+.hover {
+  position: relative;
+  top: -5px; 
 }
