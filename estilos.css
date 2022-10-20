@@ -52,22 +52,6 @@ header {
 .lista-item__link:hover {
     text-decoration: underline 5px;
 }
-
-/* -------------------- background  -----------------------   */
-
-.planofundo {
-    background: linear-gradient(#fff, #ccc ) fixed;
-    background-color:#ffc599;
-    background-image:
-    radial-gradient(at 22% 14%, hsla(191,99%,61%,1) 0px, transparent 50%),
-    radial-gradient(at 22% 76%, hsla(238,79%,66%,1) 0px, transparent 50%),
-    radial-gradient(at 69% 40%, hsla(5,84%,67%,1) 0px, transparent 50%),
-    radial-gradient(at 33% 57%, hsla(276,79%,60%,1) 0px, transparent 50%),
-    radial-gradient(at 22% 30%, hsla(66,92%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 34% 4%, hsla(137,84%,78%,1) 0px, transparent 50%),
-    radial-gradient(at 7% 70%, hsla(347,74%,78%,1) 0px, transparent 50%);
-}
-
 /* -------------------- Chamada  -----------------------   */
 
 .chamada {
@@ -75,16 +59,9 @@ header {
     width: calc(100% -4px);
     background: linear-gradient(#fff, #ccc ) fixed;
     overflow: hidden;
-    background-size: cover;
-    background-color:#ffc599;
-    background-image:
-    radial-gradient(at 22% 14%, hsla(191,99%,61%,1) 0px, transparent 50%),
-    radial-gradient(at 22% 76%, hsla(238,79%,66%,1) 0px, transparent 50%),
-    radial-gradient(at 69% 40%, hsla(5,84%,67%,1) 0px, transparent 50%),
-    radial-gradient(at 33% 57%, hsla(276,79%,60%,1) 0px, transparent 50%),
-    radial-gradient(at 22% 30%, hsla(66,92%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 34% 4%, hsla(137,84%,78%,1) 0px, transparent 50%),
-    radial-gradient(at 7% 70%, hsla(347,74%,78%,1) 0px, transparent 50%);
+    background-image: url('cool-background.png');
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 
@@ -194,20 +171,6 @@ header {
     display: flex;
     flex-direction: column;
 }
-
-.chamada__container2{
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) rgba(255,255,255,0));
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius:32px;
-    width: 55%;
-    margin:auto;
-    padding: 10px;
-
-}
-
 /* ------------------- Espaço -------------- */
 .espacocima{
     margin-top: 5rem;
