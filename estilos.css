@@ -70,6 +70,7 @@ header {
     font-family:Candara;
     font-size: 2.5rem;
     padding-bottom: 1rem;
+    color:#000000;
 }
 
 
@@ -78,6 +79,7 @@ header {
     font-size: 1.4rem;
     font-weight: 548;
     text-align:justify;
+    color:#000000;
 }
 
 
@@ -118,7 +120,8 @@ header {
     padding-top: 3rem;
     font-family: Candara;
     font-size: 4rem;
-    text-align: center
+    text-align: center;
+    color:#ffffff;
 }
 
 .sobre__items{
@@ -137,13 +140,15 @@ header {
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
+    color:#000000;
 }
 
 .sobre__items-texto{
     font-family: Candara;
     font-size: 1rem;
     margin: 2rem;
-    text-align:justify
+    text-align:justify;
+    color:#000000;
 }
 
 
@@ -236,8 +241,8 @@ header {
   
   .card-carousel {
     --card-width: 80%;
-    --card-max-width: 280px;
-    --card-height: 350px;
+    --card-max-width: 520px;
+    --card-height: 600px;
     --carousel-min-width: 600px;
     z-index: 1;
     position: relative;
