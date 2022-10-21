@@ -14,14 +14,14 @@ body {
 
 header {
     background-color: black;
-
+    position:fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+    z-index: 2;
     padding: 1rem 4rem;
-
+    width: 100%;
     font-size: 1.3rem;
 }
 
@@ -85,23 +85,13 @@ header {
 
 /* ------------------- Sobre -------------- */
 .sobre {
-    padding: 2rem 2rem;
-
-    
-    width: calc(100% -4px);
-    background: linear-gradient(#fff, #ccc ) fixed;
-    overflow: hidden;
-    background-size: cover;
-    background-color:#ffc599;
-    background-image:
-    radial-gradient(at 22% 14%, hsla(191,99%,61%,1) 0px, transparent 50%),
-    radial-gradient(at 22% 76%, hsla(238,79%,66%,1) 0px, transparent 50%),
-    radial-gradient(at 69% 40%, hsla(5,84%,67%,1) 0px, transparent 50%),
-    radial-gradient(at 33% 57%, hsla(276,79%,60%,1) 0px, transparent 50%),
-    radial-gradient(at 22% 30%, hsla(66,92%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 34% 4%, hsla(137,84%,78%,1) 0px, transparent 50%),
-    radial-gradient(at 7% 70%, hsla(347,74%,78%,1) 0px, transparent 50%);
-   
+  padding: 6rem 2rem;
+  width: calc(100% -4px);
+  background: linear-gradient(#fff, #ccc ) fixed;
+  overflow: hidden;
+  background-image: url('cool-background.png');
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 
@@ -224,6 +214,18 @@ header {
     height: 2px;
     background-image: linear-gradient(to right, transparent, #CCC, transparent);  
   }
+
+ .semicirculo-baixo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    background-color: white;
+
+}
 /* ------------------- Carrossel -------------- */
 .visuallyhidden {
     position: absolute;
