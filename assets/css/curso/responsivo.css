@@ -1,0 +1,29 @@
+@media screen and (max-width:999px) {
+
+.principal {
+    row-gap: 4rem;
+    margin: 5%;
+}
+
+.identificacao {
+    width: 90%;
+}
+
+.instrutor {
+    width: 90%;
+}
+
+.inscrever{
+    width: 80%;
+}
+
+.video-container{    
+    height: 50vh;
+    width: 90%;
+}
+
+.materiais {
+    width: 90%;
+}
+
+}

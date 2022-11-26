@@ -1,0 +1,174 @@
+/* estilização para particulas */
+
+
+.cabecalho {
+    position: absolute;
+    top: -120px;
+    width: 100%;
+    z-index: 3;
+}
+
+
+
+body {
+    background: #BADB73;
+    margin-top: 120px;
+    color: black;
+}
+
+/* nenhuma sections */
+
+.quebra__linha {
+    margin: 4rem;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+    filter: brightness(.9);
+}
+
+.titulo {
+    filter: brightness(.9);
+    padding-top: 3rem;
+    font-size: 6rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.titulo b {
+    color: #4ABD3A;
+}
+
+/* seção de metodologias */
+
+
+.metodologias {
+    display: flex;
+    margin: 5rem auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    width: 50%;
+    color: rgba(0, 0, 0, .5);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    filter: brightness(.9);
+    margin-left: 3rem;
+    padding: 2rem 1.5rem 1.5rem 2rem;
+}
+.containers__titulo {
+    font-size: 40px;
+    padding-bottom: 1rem;
+    color: #000000;
+    text-align: center;
+}
+
+.containers__titulo b {
+    color: #4ABD3A;
+}
+
+
+.containers__texto {
+    text-align: justify;
+    color: #444;
+    font-size: 23px;
+}
+
+/* Sobre o curso */
+
+.image-container{
+    height: 120px;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.sobre__items-titulos{
+    font-size: 60px;
+    font-weight: 700;
+    color: #4ABD3A;
+    text-align: center;
+}
+.sobre__items-texto{
+    text-align: justify;
+    margin: 14px 20px;
+    font-size: 20px;
+}
+
+/* seção de compra dos cursos */
+
+.compre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.compre__item {
+    width: calc(33.3% - 2rem);
+    background: #fff;
+    filter: brightness(1);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+
+
+.compre__item-titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5rem;
+    text-decoration: 2px underline black;
+    text-underline-position: under;
+}
+
+.compre__item-lista {
+    font-size: 22px;
+}
+
+.compre__item-texto {
+    width: 80%;
+    display: inline-block;
+    line-height: 3rem;
+}
+
+
+.compre__valor {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.compre__valor::before {
+    content: "R$ ";
+}
+
+.compre__comprar {
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 1rem 1rem;
+    color: white;
+    background: black;
+    transition: .7s;
+}
+
+
+
+.compre__comprar:hover {
+    border: 1px solid black;
+    color: black;
+    background: white;
+}
+
+.compre__comprar-link:hover {
+    text-decoration: none;
+}
+
+

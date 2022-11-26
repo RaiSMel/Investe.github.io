@@ -1,0 +1,35 @@
+@media screen and (max-width:999px) {
+
+    .cursos__iniciados-item {
+        width: 47.5%;
+    }
+
+    .relevantes__item {
+        width: 47.5%;
+    }
+
+    .disponiveis__item {
+        width: 47.5%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .pesquisa{
+        width: 90%;
+    }
+
+    .cursos__iniciados-item {
+        width: 100%;
+    }
+
+    .relevantes__item {
+        width: 100%;
+    }
+
+    .disponiveis__item {
+        width: 100%;
+    }
+
+}

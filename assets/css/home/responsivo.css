@@ -1,0 +1,97 @@
+@media screen and (max-width:950px) {
+
+    /* cursos iniciados responsividade */
+
+    .cursos__iniciados {
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+
+    .cursos__iniciados-titulo {
+        margin-right: 60%;
+    }
+
+    .cursos__iniciados-item {
+        width: 45%;
+        padding: .5rem;
+    }
+
+    /* cursos melhores avaliados resposividade*/
+
+    .cursos__melhores-avaliados {
+        margin: 5rem auto;
+        width: 100%;
+    }
+
+    /* noticias responsividade */
+
+
+    .noticias__items {
+        gap: 2rem;
+    }
+
+    .noticias__item-conteudo {
+        width: calc(50% - 1rem);
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+
+    /* cursos iniciados responsividade */
+
+    .cursos__iniciados-titulo {
+        margin-right: 0;
+    }
+
+    .cursos__iniciados-item {
+        width: 90%;
+    }
+
+    /* cursos melhores avaliados resposividade*/
+
+    .cursos__melhores-avaliados {
+        margin: 5rem auto;
+        padding: 1rem 1rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cursos__melhores-avaliados-titulo {
+        width: 200px;
+    }
+
+    .cursos__melhores-avaliados-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cursos__melhores-avaliados-titulos {
+        text-align: center;
+        padding: 0;
+    }
+
+    .cursos__melhores-avaliados-texto {
+        padding: 2rem 1rem;
+    }
+
+
+    /* noticias responsividade */
+    .noticias {
+        padding: 2rem;
+    }
+
+    .noticias__items {
+        flex-direction: column;
+    }
+
+    .noticias__item-conteudo {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}

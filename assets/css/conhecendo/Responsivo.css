@@ -1,0 +1,50 @@
+/* Responsividade Carrosel  */
+
+@media screen and (max-width:767px) {
+    .card-carousel .card{
+      width: 80%;
+      height: 520px;
+    }
+  }
+
+  
+@media screen and (max-width: 370px) {
+  .card-carousel .card{
+    width: 90%;
+    height: 550px;
+  }
+}
+
+
+/* Responsividade Conteudo */
+
+
+@media screen and (max-width: 1200px) {
+    
+    .compre {
+        justify-content: start;
+    }
+    .compre__item {
+        width: calc(50% - 2rem);
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .metodologias {
+        width: 90%;
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+
+    .container{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .compre__item {
+        width: 100%;
+        margin-left: 0;
+    }
+}

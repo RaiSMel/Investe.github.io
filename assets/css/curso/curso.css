@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #BADB73;
+}
+
+.borda-preta{
+    border: 1px solid black;
+    box-shadow: 6px 6px 3px #bbb;
+    border-radius: 10px;
+}
+
+.principal {
+    background: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 5% ;
+    justify-content: center;
+    margin: 5% 10% ;
+    padding: 5rem 0;
+}
+
+.titulo{
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 600;
+    
+}
+.curso-img {
+    display: inline-block;
+    border-radius: 50%;
+    border: 4px solid #333;
+    height: 100px;
+    margin-bottom: 1rem;
+    width: 100px;
+}
+
+/* identificação e apresentação do curso que será apresentado */
+
+.identificacao {
+    width: 50%;
+    background: #BADB73;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.identificacao-titulo {
+    width: auto;
+    margin-left: 2rem;
+}
+
+.identificacao__texto {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+/* apresentação do instrutor do curso atual */
+
+.instrutor {
+    align-items: center;
+    background: #BADB73;
+    border-radius: 10px;
+    display: flex;
+    gap: 0 10px;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 35%;
+}
+
+.texto{
+    width: calc(100% - 110px);
+}
+
+
+.instrutor-nome {
+    text-align: center;
+    display: inline-block;
+}
+
+.instrutor-texto {
+    font-size: 2rem;
+    display: inline-block;
+    text-align: justify;
+}
+
+/* parte para iniciar o curso */
+
+.inscrever{
+    width: 60%;
+    background: #BADB73;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.inscrever-botao{
+    background: #222;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 2rem;
+    height: 60px;
+    width: 200px;
+    box-shadow: 3px 3px 7px #333;
+}
+.inscrever-botao:hover{
+    background: #111;
+    color: #fff;
+    transform: scale(105%);
+}
+.inscrever-botao:active{
+    transform: scale(100%);
+}
+
+/* video sobre investimentos */
+
+.video-container{
+    width: 50%;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+/* modulos que o curso possui com carga horária */
+
+.materiais {
+    overflow: auto;
+    width: 35%;
+    background: #BADB73;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.conteudo .titulo{
+    margin: 0;
+}
+
+.modulo {
+    background: #eee;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3rem;
+    list-style: none;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+.exercicios {
+    color: #444;
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.displayNone {
+    display: none;
+}
+
+/* local onde aparece os material de aula */
+
+.atividades{
+    background: #BADB73;
+    font-size: 2rem;
+    padding: 4rem 4rem;
+    width: 90%;
+    text-align: justify;
+}

@@ -1,0 +1,211 @@
+/* padrão */
+
+
+.titulo {
+    color: rgb(255, 255, 255);
+    background: #000000aa;
+    font-size: 3rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+
+.principal {
+    background: #BADB73;
+    padding: 80px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* cabecalho logado */
+
+.cabecalho__usuario {
+    filter: invert(100%);
+    background: url(../../imgs/loginIlustracao.png) center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+/* seção cursos iniciados  */
+
+.cursos__iniciados {
+    width: 40%;
+    height: 450px;
+    padding: 1rem 2rem;
+    background: #eee;
+    border-radius: 20px;
+    border: 1px solid #4ABD3A;
+    transition: .5s;
+    overflow: auto;
+}
+
+.cursos__iniciados-titulo {
+    width: 174px;
+}
+
+.iniciados__items {
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cursos__iniciados-item {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #BADB73;
+    border-radius: 5px;
+    box-shadow: 4px 7px 15px #333;
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.cursos__iniciados-item:hover {
+    color: #000;
+}
+
+
+.item-img {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: black;
+    border: 2px solid black;
+    margin: .4rem 1rem;
+    border-radius: 50%;
+}
+
+
+
+/* seção cursos melhores avaliados */
+
+.cursos__melhores-avaliados {
+    background: url(../../imgs/images.jpg) center;
+    width: 55%;
+    height: 450px;
+    border: 1px solid #4ABD3A;
+    border-radius: 15px;
+    background: #eee;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    transition: .5s;
+    overflow: auto;
+}
+
+.cursos__melhores-avaliados-titulo {
+    width: 272px;
+    margin: 2rem 1rem;
+}
+
+
+.cursos__melhores-avaliados-item {
+    color: black;
+    background: #badb73;
+    border-radius: 5px;
+    box-shadow: 4px 7px 15px #333;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    width: 90%;
+    overflow: auto;
+    padding: 1.5rem 1rem 1rem 1.5rem;
+}
+
+.cursos__melhores-avaliados-item:hover {
+    text-decoration: underline #000;
+    transform: scale(105%);
+}
+
+
+.img-avaliados {
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+.cursos__melhores-avaliados-titulos {
+    color: #000;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    text-align: left;
+    transform: translateY(calc(50% - 15px));
+    width: calc(100% - 74px);
+}
+
+.cursos__melhores-avaliados-texto {
+    width: 100%;
+    padding: .5rem .2rem 0 1.5rem;
+    font-size: 2rem;
+    color: black;
+    text-align: justify;
+}
+
+/* seção de notícias  */
+
+.noticias {
+    width: 100%;
+    margin: 3rem 0;
+    background: #eee;
+    border-radius: 10px;
+    padding: 5rem;
+    transition: .5s;
+}
+
+.noticias__titulo {
+    margin: 0;
+    width: 255px;
+}
+
+.noticias__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.noticias__item-conteudo {
+    color: black;
+    background: #BADB73;
+    width: calc(33% - 2rem);
+    filter: drop-shadow(5px 5px 4px #666);
+    box-sizing: cover;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 5rem 0 0 1.6rem;
+    transition: .3s;
+}
+
+.noticias__item-conteudo:hover {
+    color: #000;
+    transform: scale(102%);
+}
+
+.noticias__item-imagem {
+    width: 100%;
+    height: 200px;
+}
+
+.noticias__item-titulo {
+    margin: 1rem .5rem .7rem;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.noticias__item-texto {
+    padding: 0 1.2rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}

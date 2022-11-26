@@ -1,0 +1,178 @@
+<?php
+session_start();
+include('./assets/php/verifica_login.php');
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./assets/imgs/logoInveste.png">
+    <title>INVESTE! | HOME</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/padrao.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/home/home.css">
+    <link rel="stylesheet" href="./assets/css/home/responsivo.css">
+
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html" class="cabecalho__logo">
+            <div class="logo__site" alt="logo investe"></div>
+        </a>
+
+        <div class="menu-secao" data-menu-secao>
+            <div class="menu-juncao" data-menu-juncao>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="cabecalho__nav-bar">
+                <ul class="cabelho__items">
+                    <a class="cabecalho__item-redirecionamento" href="home.html">
+                        <li class="cabecalho__item">HOME</li>
+                    </a>
+                    <a class="cabecalho__item-redirecionamento" href="cursos.html">
+                        <li class="cabecalho__item">CURSOS</li>
+                    </a>
+                    <a class="cabecalho__item-redirecionamento" href="noticias.html">
+                        <li class="cabecalho__item">NOTÍCIAS</li>
+                    </a>
+                    <a id="usuario" class="cabecalho__item-redirecionamento">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle cabecalh__item-usuario" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="principal">
+
+        <span class="usuario_painel displayNone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-box-arrow-right usuario-logout" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                <path fill-rule="evenodd"
+                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg>
+        </span>
+
+        <section class="cursos__iniciados">
+            <h2 class="cursos__iniciados-titulo titulo">Cursos Iniciados</h2>
+            <div class="iniciados__items">
+            </div>
+            
+            
+        </section>
+
+        <section class="cursos__melhores-avaliados">
+            <h2 class="cursos__melhores-avaliados-titulo titulo">Cursos melhores avaliados</h2>
+            <a class="cursos__melhores-avaliados-item">
+
+                <img class="img-avaliados" src="./assets/imgs/educacaoFinanceira.png"
+                    alt="gráfico, mostrando como funcionam ativos" />
+
+                <h3 class="cursos__melhores-avaliados-titulos">Educação financeira</h3>
+
+                <p class="cursos__melhores-avaliados-texto">Como criar o hábito de ministrar o dinheiro com sabedoria,
+                    deixando de lado coisas
+                    superfolas.</p>
+            </a>
+            <a class="cursos__melhores-avaliados-item">
+
+                <img class="img-avaliados" src="./assets/imgs/educacaoFinanceira.png"
+                    alt="gráfico, mostrando como funcionam ativos" />
+
+                <h3 class="cursos__melhores-avaliados-titulos">Educação financeira</h3>
+
+                <p class="cursos__melhores-avaliados-texto">Como criar o hábito de ministrar o dinheiro com sabedoria,
+                    deixando de lado coisas
+                    superfolas.</p>
+            </a>
+        </section>
+
+        <section class="noticias">
+            <h2 class="noticias__titulo titulo">Notícias de investimentos</h2>
+            <div class="noticias__items">
+                <a class="noticias__item-conteudo">
+                    <img class="noticias__item-imagem" src="./assets/imgs/dolar.jpeg" alt="caindo valor do bitcoin" />
+                    <h3 class="noticias__item-titulo">Bitcoin caindo</h3>
+                    <p class="noticias__item-texto">O bitcoin nos últimos meses apresentam uma queda significativa do
+                        seu valor, perdendo ao todo
+                        metade do maior valor alcançado nos últimos 6 meses, e está estabilizado no valor de 100mil
+                        reais durante os
+                        últimos meses podendo ser o seu equilibrio.</p>
+                </a>
+                <a class="noticias__item-conteudo">
+                    <img class="noticias__item-imagem" src="./assets/imgs/dolar.jpeg" alt="caindo valor do bitcoin" />
+                    <h3 class="noticias__item-titulo">Bitcoin caindo</h3>
+                    <p class="noticias__item-texto">O bitcoin nos últimos meses apresentam uma queda significativa
+                        do
+                        seu valor, perdendo ao todo
+                        metade do maior valor alcançado nos últimos 6 meses, e está estabilizado no valor de 100mil
+                        reais durante os
+                        últimos meses podendo ser o seu equilibrio.</p>
+                </a>
+                <a class="noticias__item-conteudo">
+                    <img class="noticias__item-imagem" src="./assets/imgs/dolar.jpeg" alt="caindo valor do bitcoin" />
+                    <h3 class="noticias__item-titulo">Bitcoin caindo</h3>
+                    <p class="noticias__item-texto">O bitcoin nos últimos meses apresentam uma queda significativa
+                        do
+                        seu valor, perdendo ao todo
+                        metade do maior valor alcançado nos últimos 6 meses, e está estabilizado no valor de 100mil
+                        reais durante os
+                        últimos meses podendo ser o seu equilibrio.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+
+        <a href="index.html">
+            <div class="logo__site" alt="logo investe"></div>
+        </a>
+
+        <section class="redes-sociais">
+
+            <div class="redes-sociais__imagens facebook" alt="facebook"></div>
+            <div class="redes-sociais__imagens twitter" alt="twitter"></div>
+            <div class="redes-sociais__imagens instagram" alt="instragram"></div>
+
+            <p class="redes-sociais__direitos">INVESTE! ® 2022 | TODOS OS DIREITOS RESERVADOS</p>
+
+        </section>
+
+        <nav class="informacoes">
+            <a class="informacoes_item" href="sobrenos.html">SOBRE NÓS </a>
+            <a class="informacoes_item">CONTATO</a>
+        </nav>
+
+    </footer>
+
+</body>
+
+<script type="module" src="./assets/js/padrao.js"></script>
+<script type="module" src="./assets/js/home/main.js"></script>
+
+
+</html>

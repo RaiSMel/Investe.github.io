@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./assets/imgs/logoInveste.png">
+    <title>INVESTE! | CADASTRO</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/padrao.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/cadastro/cadastro.css">
+
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+
+    <header class="cabecalho">
+        <a href="index.html" class="cabecalho__logo">
+            <div class="logo__site" alt="logo investe"></div>
+        </a>
+
+        <div class="menu-secao" data-menu-secao>
+            <div class="menu-juncao" data-menu-juncao>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="cabecalho__nav-bar">
+                <ul class="cabelho__items">
+                    <a class="cabecalho__item-redirecionamento" href="login.html">
+                        <li class="cabecalho__item">ENTRAR</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+
+        <div class="container">
+            <h1 class="titulo" style="color:#483D8B">Cadastro</h1>
+
+            <form action="main.js">
+
+
+                <div class="container-inputs">
+                    <i class="fas fa-envelope iEmail"></i>
+                    <input id="email" type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="container-inputs">
+                    <i class="fas fa-lock iPassword"></i>
+                    <input id="senha" type="password" name="senha" placeholder="Senha" autocomplete="off" required>
+                </div>
+
+                <div class="container-inputs">
+                    <i class="fas fa-lock iPassword"></i>
+                    <input id="confirmarSenha" type="password" name="confirmarSenha" placeholder="Confirmar senha"
+                        autocomplete="off" required>
+                </div>
+
+                <div class="erros displayNone">
+                </div>
+
+                <button class="botaoCadastrar">Cadastrar</button>
+            </form>
+
+
+            <div class="Sucesso">
+
+                <p class="redi">Já possui Cadastro? Faça seu <a href="login.html">Login</a></p>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="rodape">
+
+        <a href="index.html" class="cabecalho__logo">
+            <div class="logo__site" alt="logo investe"></div>
+        </a>
+
+        <section class="redes-sociais">
+
+            <div class="redes-sociais__imagens facebook" alt="facebook"></div>
+            <div class="redes-sociais__imagens twitter" alt="twitter"></div>
+            <div class="redes-sociais__imagens instagram" alt="instragram"></div>
+
+            <p class="redes-sociais__direitos">INVESTE! ® 2022 | TODOS OS DIREITOS RESERVADOS</p>
+
+        </section>
+
+        <nav class="informacoes">
+            <a class="informacoes_item" href="sobrenos.html">SOBRE NÓS </a>
+            <a class="informacoes_item">CONTATO</a>
+        </nav>
+
+    </footer>
+</body>
+<script type="module" src="./assets/js/cadastro/main.js"></script>
+<script type="module" src="./assets/js/padrao.js"></script>
+
+</html>
