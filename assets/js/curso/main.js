@@ -15,10 +15,9 @@ if(url.match(verificador)){
 
     const variavel = itens['conteudos']();
     
-    setTimeout(criacao['criarPagina'](variavel));
+    criacao['criarPagina'](variavel);
     
-    setTimeout(criacao['escutarPagina'], 1000);
-
+    setTimeout(criacao['escutarPagina'], 1000) 
 
 }else{
 

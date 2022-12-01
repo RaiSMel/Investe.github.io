@@ -1,7 +1,7 @@
 // chave de acesso do banco de dados do firebase
 
 const firebaseConfig = {
-
+  
 };
 
 // gs://etec-65b6d.appspot.com/12.png

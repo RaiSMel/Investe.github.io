@@ -1,29 +1,12 @@
 
 const cursosIniciados = document.querySelector('.iniciados__items');
 
-let cursos = await JSON.parse(sessionStorage.getItem('cursos'));
+const criarCursosIniciados = async (id, imgUrl, nome) => {
 
 
-const criarCursosIniciados = async () => {
-
-
-    if(cursos != null){
-        cursos.forEach(async (element) => {
-             cursosIniciados.innerHTML +=    `<a href="curso.html${element[0]}" class="cursos__iniciados-item">
-                <img src="${element[2]}" class="item-img"></div>${element[1]}
+             cursosIniciados.innerHTML +=    `<a href="curso.html${id}" class="cursos__iniciados-item">
+                <img src="${imgUrl}" class="item-img">${nome}
             </a>`;
-        });
-    }else{
-        cursosIniciados.innerHTML += "<p style='margin: auto auto; font-size: 3rem;width: auto'>Você não está inscrito em nenhum curso ainda</p>"
-    }
-    
-
-    
-    
-
-
-
-
 
 }
 

@@ -10,9 +10,12 @@ const Modulos = [];
 const exercicios = [];
 
 
-let conteudo
-let professor 
+let conteudo;
+let professor;
 
+const recarregar = () => {
+    document.location.reload()
+}
 
 const criarPagina = (objeto) => {
 
@@ -42,7 +45,10 @@ const criarPagina = (objeto) => {
             <h2 class="instrutor-nome">${professor['professor']}</h2>
             <p class="instrutor-texto">${professor['sobre']} </p>`;
             if(!res){
-                inscreverSe.addEventListener('click', () => { itens['inscreverSe']()})
+                inscreverSe.addEventListener('click', () => { 
+                itens['inscreverSe']();
+                setTimeout( recarregar, 1000);
+            })
             }
             
             if(res){
@@ -80,6 +86,7 @@ const criarPagina = (objeto) => {
         });
 
 }
+
 
 
 // criar escuta para a página

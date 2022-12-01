@@ -1,6 +1,6 @@
 import funcoes from "../firebase.js";
 
-
+let user;
 const inscreverSe = document.querySelector('.inscrever')
 const db = funcoes['db'];
 const regExp = /\#\w*/;
@@ -57,9 +57,11 @@ const verificarCadastro = async () => {
     return verifica;
 }
 
-const inscreverCurso = () => {
+const inscreverCurso = async () => {
     
+    const usuario = await firebase.auth().onAuthStateChanged(async (usuario) => {
         
+
         db.collection("materiasInciadas").add({
             id: `${curso[0]}`,
             usuario: `${usuario.uid}`
@@ -67,7 +69,7 @@ const inscreverCurso = () => {
         .catch((error) => {
             console.error("Error adding document: ", error);
         })
-
+    })
 }
 
 

@@ -1,0 +1,15 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resposta{
+
+}
