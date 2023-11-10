@@ -9,7 +9,7 @@ const ModeloPessoa ={
         'graficoHobbies': "./assets/imgs/geradeHobbies.png"
     },
     2:{
-        'imgPerfil': './assets/imgs/Rai.png',
+        'imgPerfil': './assets/imgs/rai.png',
         'nome': 'Rai Mello',
         'cargo': 'Full-Stack',
         'descricao': 'Me chamo Rai Silva, tenho 21 anos nasci e moro em São Paulo, meu primeiro contato com programação aconteceu aos 13 anos com html e css, acabei deixando de lado até o ano passado, quando comecei a estudar na área de programação e acabei caindo de "  cabeça nesse mundo ".',

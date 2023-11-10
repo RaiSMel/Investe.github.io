@@ -6,4 +6,5 @@ funcoes['autenticar']();
 
 metodos['idCurso']();
 
+funcoes['verificarPerfil']();
 

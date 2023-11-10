@@ -48,7 +48,7 @@ const verificarCadastro = async () => {
 
     const usuario = await firebase.auth().onAuthStateChanged(async (usuario) => {
 
-        const itemVerificar = await db.collection("materiasInciadas").where("id", "==", `${curso[0]}`).where("usuario", "==", `${usuario.uid}`).get();
+        const itemVerificar = await db.collection("materiasIniciadas").where("id", "==", `${curso[0]}`).where("usuario", "==", `${usuario.uid}`).get();
         itemVerificar.forEach(item =>{
             if((Object.keys(item.data()).length) > 0)
             verifica=true
@@ -62,7 +62,7 @@ const inscreverCurso = async () => {
     const usuario = await firebase.auth().onAuthStateChanged(async (usuario) => {
         
 
-        db.collection("materiasInciadas").add({
+        db.collection("materiasIniciadas").add({
             id: `${curso[0]}`,
             usuario: `${usuario.uid}`
         })
@@ -84,46 +84,4 @@ export default itens;
 
 
 
-
-
-
-
-// db.collection("Materias").get().then((querySnapshot) => {
-//     querySnapshot.forEach((doc) => {
-
-//         Object.keys(doc.data()).forEach(keys =>{
-
-//             console.log(doc.data()[keys])
-
-//             if(doc.data().empty)
-//             nomeProfessor = doc.data()['professor']
-
-//         })
-
-    
-//     })
-// })
-
-
-
-
-
-
-// db.collection("Professores").get().then((querySnapshot) => {
-//         querySnapshot.forEach(professor => {
-//             console.log(professor.data())
-//         })
-
-// })
-
-// const res = await db.collection('Professores').Document(idProfessor);
-// console.log(res)
-
-// db.collection("Materias").get().then((querySnapshot) => {
-//     querySnapshot.forEach((doc) => {
-//         console.log(doc.data()['titulo']);
-//         console.log(Date.parse(doc.data()['date'].toDate().toString()))
-//         console.log(doc.data()['video']);
-//     });
-// });
 
